@@ -1,28 +1,23 @@
-@font-face {
-  font-family: "Haoura";
-  src: url("../fonts/Hauora/Hauora-Bold.woff2") format("woff2");
-}
-* {
+@import "fonts";
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-a {
+a{
   text-decoration: none;
 }
-
-button {
+button{
   border: none;
 }
-
-li {
+li{
   list-style: none;
 }
-
-img {
+img{
   width: 100%;
 }
+
+//swiper
 
 .swiper {
   width: 100%;
@@ -33,6 +28,7 @@ img {
   text-align: center;
   font-size: 18px;
   background: #fff;
+
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,56 +51,48 @@ img {
   width: 100%;
   object-fit: cover;
 }
-
-.swiper-pagination {
+.swiper-pagination{
   position: relative;
   top: 0;
   left: 0;
 }
-
-.swiper-pagination-bullet {
+.swiper-pagination-bullet{
   width: 11px;
   height: 11px;
   background: green;
 }
-
-.swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active{
   background: #E89F71;
 }
-
-.popup {
+.popup{
   display: none;
   position: fixed;
   top: 0;
-  background: rgba(232, 159, 113, 0.5647058824);
+  background: #E89F7190;
   height: 100vh;
   width: 100vw;
   z-index: 100;
   justify-content: center;
   align-items: center;
+  &__block{
+    width: 500px;
+    height: 500px;
+    background: #ffffff;
+  }
 }
-.popup__block {
-  width: 500px;
-  height: 500px;
-  background: #ffffff;
-}
-
-.arsen {
+.arsen{
   width: 200px;
   height: 200px;
   background: red;
 }
-
-.popup_active {
+.popup_active{
   display: flex;
 }
-
-.text-center {
+.text-center{
   text-align: center;
 }
 
-.Hauora {
-  font-family: Haoura, sans-serif;
+.Hauora{
+  font-family: Haoura , sans-serif;
 }
 
-/*# sourceMappingURL=style.css.map */

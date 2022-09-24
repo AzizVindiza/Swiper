@@ -6,21 +6,58 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Шаблон версии 1</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-<header class="header">
-    <div class="container">
-AZIZ
-    </div>
-</header>
+
 <main>
     <section class="first">
-        <div class="container"></div>
+        <div class="container">
+            <div class="swiper-control">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-control__btns">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper first__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./src/img/2.png" alt="">
+                        <span class="arsen">arsen privet</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/img/2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/img/2.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="first__block"></div>
+        </div>
     </section>
+    <div class="popup popup_active d-flex" id="popup">
+        <div class="popup__block">
+            <button onclick=""></button>
+            <h2 class="Hauora">Привет мир!</h2>
+            <h2>Привет мир!</h2>
+            <div class="arsen"></div>
+            <button>Hello</button>
+        </div>
+    </div>
+
 </main>
-<footer class="footer">
-    <div class="container"></div>
-</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./src/js/index.js"></script>
+
 </body>
+
 </html>
